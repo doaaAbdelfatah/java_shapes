@@ -7,14 +7,26 @@ public  class Rect { // default  ,public
     // private , - , protected , public
     private double length;
 
+    public static  int count ;
+
+    public  static final  byte MIN_WIDTH = 10;
+    public  static  final String COMPANY = "Mystro"; // constant ثابت
+
+
+    private  Rect(){ // استخدامه داخليا داخل هذا الكلاس فقط
+        System.out.println("Rect Created");
+        count++;
+    }
     public Rect( double width , double length){
+        this();// call  Rect() constructor
         this.width =width;
         this.length= length;
     }
-
     public Rect(double length){
-        this.width= length;
+        this();
         this.length = length;
+        this.width=  length;
+
     }
 
     public double area(){

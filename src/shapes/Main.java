@@ -6,5 +6,7 @@ public class Main {
 
         Rect rect2 = new Rect(10 ,20);
 
+        Rect.count = 10;
+
     }
 }
